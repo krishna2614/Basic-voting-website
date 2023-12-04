@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Voting System</title>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Vote</a></li>
+            <li><a href="#">Results</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header with Background Image -->
+    <header style="background-image: url('background-image.jpg');">
+        <h1>Welcome to the Voting System</h1>
+        <p>Cast your vote for your favorite option!</p>
+    </header>
+
+    <!-- Main Content Section -->
+    <section id="voting-section">
+        <h2>Vote for Your Favorite</h2>
+
+        <!-- Video Option -->
+        <div class="voting-option">
+            <video controls>
+                <source src="video-option.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p>Option 1: Video Option</p>
+            <button onclick="vote('option1')">Vote for Option 1</button>
+        </div>
+
+        <!-- Image Option -->
+        <div class="voting-option">
+            <img src="image-option.jpg" alt="Option 2: Image Option">
+            <p>Option 2: Image Option</p>
+            <button onclick="vote('option2')">Vote for Option 2</button>
+        </div>
+
+        <!-- Text Description Option -->
+        <div class="voting-option">
+            <p>Option 3: Text Description Option</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+            <button onclick="vote('option3')">Vote for Option 3</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Voting System</p>
+    </footer>
+
+    <!-- JavaScript for Vote Functionality -->
+    <script src="script.js"></script>
+</body>
+</html>
